@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.AddressableAssets;
 using System;
 
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image m_gameLogoImage;
     [SerializeField] private string m_LogoAddress;
     private AsyncOperationHandle<Sprite> m_LogoLoadHandle;
+    private static AsyncOperationHandle<SceneInstance> m_SceneLoadOpHandle;
 
     public void Awake()
     {
@@ -61,7 +63,7 @@ public class GameManager : MonoBehaviour
 
     public static void LoadNextLevel()
     {
-        SceneManager.LoadSceneAsync("LoadingScene");
+        m_SceneLoadOpHandle = Addressables.LoadSceneAsync("LoadingScene", activateOnLoad: true);
     }
 
     public static void LevelCompleted()
