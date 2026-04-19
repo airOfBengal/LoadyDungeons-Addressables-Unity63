@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.AddressableAssets;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +17,8 @@ public class GameManager : MonoBehaviour
     public static int s_ActiveHat = 0;
 
     [SerializeField] private Image m_gameLogoImage;
+    [SerializeField] private string m_LogoAddress;
+    private AsyncOperationHandle<Sprite> m_LogoLoadHandle;
 
     public void Awake()
     {
@@ -32,11 +37,16 @@ public class GameManager : MonoBehaviour
         // When we go to the 
         s_CurrentLevel = 0;
 
-        var logoResourceRequest = Resources.LoadAsync<Sprite>("LoadyDungeonsLogo");
-        logoResourceRequest.completed += (asyncOperation) =>
+        m_LogoLoadHandle = Addressables.LoadAssetAsync<Sprite>(m_LogoAddress);
+        m_LogoLoadHandle.Completed += OnLogoLoadComplete;
+    }
+
+    private void OnLogoLoadComplete(AsyncOperationHandle<Sprite> handle)
+    {
+        if(handle.Status == AsyncOperationStatus.Succeeded)
         {
-            m_gameLogoImage.sprite = logoResourceRequest.asset as Sprite;
-        };
+            m_gameLogoImage.sprite = handle.Result;
+        }
     }
 
     public void ExitGame()

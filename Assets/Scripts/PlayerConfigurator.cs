@@ -11,7 +11,7 @@ public class PlayerConfigurator : MonoBehaviour
     private Transform m_HatAnchor;
 
     [SerializeField]
-    private AssetReference m_HatAssetReference;
+    private AssetReferenceGameObject m_HatAssetReference;
 
     private AsyncOperationHandle<GameObject> m_HatLoadOpHandle;
 
