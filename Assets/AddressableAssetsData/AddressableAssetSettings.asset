@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
   m_InternalIdNamingMode: 0
@@ -51,10 +51,10 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 8143fa5e934a8404abf1f416fd6dce50
   m_RemoteCatalogLoadPath:
-    m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+    m_Id: 8bc82c3e43c3ab24daf76225b8d4f930
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
@@ -78,9 +78,9 @@ MonoBehaviour:
       - m_Id: 712269740cf52044592aa4079477fb7f
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 8143fa5e934a8404abf1f416fd6dce50
-        m_Value: 'ServerData/[BuildTarget]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 8bc82c3e43c3ab24daf76225b8d4f930
-        m_Value: <undefined>
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 9d0ffa0ec2239d548ada708e9f003eb9
         m_Value: DEFAULT
       - m_Id: a12de1156d26f004db22540e9d898dc0
@@ -188,4 +188,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 116985b87222f6a4b8c8072d7059b132, type: 2}
   - {fileID: 11400000, guid: c5f51472db28120449e90d874bf8e9df, type: 2}
   - {fileID: 11400000, guid: ec1142682fb889f4f80b2e60e1695f05, type: 2}
-  m_ActiveProfileId: 1706603d5b8e950468282cd6f370950d
+  m_ActiveProfileId: 2a2c8acf43a77bd4d96e16e6a57fb0bd
