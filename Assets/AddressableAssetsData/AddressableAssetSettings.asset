@@ -100,9 +100,9 @@ MonoBehaviour:
       - m_Id: 8143fa5e934a8404abf1f416fd6dce50
         m_Value: 'ServerData/[BuildTarget]'
       - m_Id: 8bc82c3e43c3ab24daf76225b8d4f930
-        m_Value: <undefined>
+        m_Value: 'https://unity.com/{UnityEditor.PlayerSettings.productName}/[RemoteHost]_[BuildTarget]'
       - m_Id: 9d0ffa0ec2239d548ada708e9f003eb9
-        m_Value: DEFAULT
+        m_Value: DEV
       - m_Id: a12de1156d26f004db22540e9d898dc0
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: f690e598a9bbc60409fa1de4c0375474
@@ -120,9 +120,9 @@ MonoBehaviour:
       - m_Id: 8143fa5e934a8404abf1f416fd6dce50
         m_Value: 'ServerData/[BuildTarget]'
       - m_Id: 8bc82c3e43c3ab24daf76225b8d4f930
-        m_Value: <undefined>
+        m_Value: 'https://unity.com/{UnityEditor.PlayerSettings.productName}/[RemoteHost]_[BuildTarget]'
       - m_Id: 9d0ffa0ec2239d548ada708e9f003eb9
-        m_Value: DEFAULT
+        m_Value: QA
       - m_Id: a12de1156d26f004db22540e9d898dc0
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: f690e598a9bbc60409fa1de4c0375474
@@ -140,9 +140,9 @@ MonoBehaviour:
       - m_Id: 8143fa5e934a8404abf1f416fd6dce50
         m_Value: 'ServerData/[BuildTarget]'
       - m_Id: 8bc82c3e43c3ab24daf76225b8d4f930
-        m_Value: <undefined>
+        m_Value: 'https://unity.com/{UnityEditor.PlayerSettings.productName}/[RemoteHost]_[BuildTarget]'
       - m_Id: 9d0ffa0ec2239d548ada708e9f003eb9
-        m_Value: DEFAULT
+        m_Value: PROD
       - m_Id: a12de1156d26f004db22540e9d898dc0
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: f690e598a9bbc60409fa1de4c0375474
